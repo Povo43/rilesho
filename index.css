@@ -14,16 +14,63 @@ header{
 }
 
 form{
-    margin: 0 10px 0 auto;
+  margin: 8px 0.6rem 8px auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #ddd;
+  border-bottom: 1px solid #b8b8b8;
+  display: block;
+  padding: 3px 10px;
+  height: 34px;
+  overflow: hidden;
 }
-    input{
-        text-align: center;
-        margin-bottom: 10px;
-        height: 30px;
-    }
-    button{
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        height: 30px;
-    }
+form input[type="text"]{
+  background-color: #ddd;
+  border: none;
+  height: 2em;
+  width: 50px;
+}
+form input[type="text"]:focus {
+  outline: 0;
+  width: 250px;
+}
+form input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.2em;
+  border: none;
+  background: none;
+  color: #29b93c;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -10px;
+  outline : none;
+}
+
+
+.button_new:hover{
+    color: #29b93c;
+}
+
+.button_new{
+    margin-right: 0.3rem;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.button_login{
+    margin: 8px 0.3rem;
+    padding: 5px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #29b93c;
+    border-radius: 0.1em;
+}
