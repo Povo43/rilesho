@@ -17,22 +17,21 @@ form{
   margin: 8px 0.6rem 8px auto;
   box-sizing: border-box;
   position: relative;
-  background-color: #ddd;
+  background-color: #f0f0f0;
   border-bottom: 1px solid #b8b8b8;
-  display: block;
+  display: none;
   padding: 3px 10px;
   height: 34px;
   overflow: hidden;
 }
 form input[type="text"]{
-  background-color: #ddd;
+  background-color: #f0f0f0;
   border: none;
   height: 2em;
-  width: 50px;
+  width: 250px;
 }
 form input[type="text"]:focus {
   outline: 0;
-  width: 250px;
 }
 form input[type="submit"]{
   cursor: pointer;
@@ -48,13 +47,25 @@ form input[type="submit"]{
   top: -10px;
   outline : none;
 }
+#search_face_button{
+  margin-top: 8px;
+  margin-right: 0.6rem;
+  margin-left: auto;
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.2em;
+  border: none;
+  color: #29b93c;
+  height: 34px;
+}
 
 
-.button_new:hover{
+.button_login:hover{
     color: #29b93c;
 }
 
-.button_new{
+.button_login{
+    font-size: 0.9em;
     margin-right: 0.3rem;
     height: 50px;
     line-height: 50px;
@@ -63,14 +74,14 @@ form input[type="submit"]{
     color: black;
 }
 
-.button_login{
+.button_new{
     margin: 8px 0.3rem;
-    padding: 5px;
+    padding: 5px 10px;
     height: 24px;
     line-height: 24px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
     background-color: #29b93c;
-    border-radius: 0.1em;
+    border-radius: 0.3em;
 }
