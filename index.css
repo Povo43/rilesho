@@ -1,5 +1,14 @@
+@charset "utf-8";
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("./ZenKurenaido.ttf") format("TrueType");
+}
+
+
 html body{
     margin: 0;
+    font-family: 'Zenkurenaido', sans-serif;
 }
 h1{
   margin: 0;
@@ -27,13 +36,13 @@ form{
   height: 34px;
   overflow: hidden;
 }
-form input[type="text"]{
+form input[type="search"]{
   background-color: #f0f0f0;
   border: none;
   height: 2em;
   width: 250px;
 }
-form input[type="text"]:focus {
+form input[type="search"]:focus {
   outline: 0;
 }
 form input[type="submit"]{
@@ -89,18 +98,69 @@ form input[type="submit"]{
     border-radius: 0.3em;
 }
 
-.New_Man{
+.New{
   background-color: #f0f0f0;
   margin: 10vh auto;
-  min-width: 15em;
-  max-width: 50em;
   padding: 3em 0;
+  max-width: 50em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.New_Man{
+  grid-column: 1 / 2;
+  min-width: 15em;
+  max-width: 30em;
 }
   .New_Man p{
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+  }
+
+  .button_big{
+    margin: 8px 0.3rem;
+    padding: 5px 10px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #29b93c;
+    border-radius: 0.3em;
   }
   .about_thispage{
-    
+    margin: 0 auto;
+    min-width: 10em;
+    max-width: 20em;
+    display: block;
+    margin-bottom: 0.4em;
+  }
+  .button_new_big{
+    margin: 0 auto;
+    min-width: 10em;
+    max-width: 20em;
+    display: block;
+  }
+
+.New_GoodPoint{
+  margin: auto 0 auto 1em;
+  grid-column: 2 / 3;
+  
+  display: grid;
+  grid-template-columns: 1.5em 1fr;
+  grid-template-rows: 3em 3em 3em 3em;
+}
+  .New_GoodPoint h3{
+    grid-column: 1 / 3;
+  }
+  .New_GoodPoint img{
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column: 1 / 2;
+  }
+  .New_GoodPoint p{
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column: 2 / 3;
+    font-size: 1.25em;
   }
