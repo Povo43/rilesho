@@ -1,0 +1,31 @@
+@charset "utf-8";
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("../ZenKurenaido.ttf") format("TrueType");
+}
+
+form{
+    width: 26em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    background-color: #f0f0f0;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #b8b8b8;
+    height: 2em;
+    width: 20em;
+    margin-left: 3em;
+    margin-right: 3em;
+    transition:ease-out 0.5s;
+}
+input:focus{
+    outline: none;
+    height: 2.5em;
+    width: 26em;
+    margin-left: 0;
+    margin-right: 0;
+}

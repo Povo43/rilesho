@@ -64,7 +64,7 @@ form input[type="submit"]{
   margin-right: 0.6rem;
   margin-left: auto;
   cursor: pointer;
-  font-family: FontAwesome;
+  font-family: FontAwesome ,'Zenkurenaido';
   font-size: 1.2em;
   border: none;
   color: #29b93c;
