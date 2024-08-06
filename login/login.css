@@ -11,20 +11,19 @@ html,body{
 }
 
 form{
-    font-size: 1rem;
+    font-size: 16px;
     display: block;
     width: 22em;
-    height: 15em;
     margin-left: auto;
     margin-right: auto;
     margin-top: calc(50vh - 5em);
     margin-bottom: calc(50vh - 5em);
 }
 
-form h1{
+h1{
     text-align: center;
     width: 20rem;
-    margin: 0.25rem 1rem;
+    margin: 0.25rem 1em;
 }
 
 input{
@@ -34,7 +33,7 @@ input{
     border-bottom: 1px solid #b8b8b8;
     height: 2em;
     width: 20em;
-    margin: 0.25em auto 0.25em auto;
+    margin: 0.25em 1em;
     transition:ease-out 0.1s;
 }
 input:focus{
@@ -52,7 +51,7 @@ button{
     height: 2em;
     width: 20em;
     margin: 0.25em 1em;
-    padding: 0;
+    padding: 1px 2px;
     transition:ease-out 0.1s;
 }
 button:focus{
