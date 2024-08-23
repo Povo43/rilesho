@@ -29,7 +29,7 @@ h1{
     margin: 0.25em;
 }
 
-input{
+input[type=text],input[type=mail],input[type=password],input[type=date]{
     background-color: #f0f0f0;
     text-align: center;
     border: none;
@@ -41,7 +41,7 @@ input{
     margin-right: 25px;
     transition:ease-out 0.1s;
 }
-input:focus{
+input[type=text]:focus,input[type=mail]:focus,input[type=password]:focus,input[type=date]:focus{
     outline: none;
     height: 2.5em;
     width: 326px;
@@ -66,4 +66,11 @@ button{
     padding: 2px 5px;
     transition:ease-out 0.1s;
     box-shadow: 3px 3px #b8b8b8;
+}
+input[type=checkbox]{
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #b8b8b8;
+    margin-top: 0.5em;
+    margin-left: 25px;
 }
