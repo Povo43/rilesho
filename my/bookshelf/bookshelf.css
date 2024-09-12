@@ -1,0 +1,72 @@
+@charset "utf-8";
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("../../ZenKurenaido.ttf") format("TrueType");
+}
+
+
+html body{
+    margin: 0;
+    font-family: 'Zenkurenaido', sans-serif;
+}
+h1{
+  margin: 0;
+}
+
+header{
+    height: 50px;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+}
+
+.logo{
+    height: 50px;
+    width: 150px;
+}
+
+form{
+  margin: 8px 0.6rrem 8px auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #b8b8b8;
+  display: none;
+  padding: 3px 10px;
+  height: 34px;
+  overflow: hidden;
+}
+form input[type="search"]{
+  background-color: #f0f0f0;
+  border: none;
+  height: 2rem;
+  width: 250px;
+}
+form input[type="search"]:focus {
+  outline: 0;
+}
+form input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  border: none;
+  background: none;
+  color: #29b93c;
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 0;
+  top: -10px;
+  outline : none;
+}
+#search_face_button{
+  margin-top: 8px;
+  margin-right: 0.6rem;
+  margin-left: auto;
+  cursor: pointer;
+  font-family: FontAwesome ,'Zenkurenaido';
+  font-size: 1.2rem;
+  border: none;
+  color: #29b93c;
+  height: 34px;
+}
